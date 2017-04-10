@@ -23,9 +23,41 @@
 
 </header>
 <main>
-  <div>
-  <p>Folosind datele publice referitoare la incidente de securitate -- preluate, de exemplu, de la Web Application Exploits --, sa se realizeze un sistem capabil sa trimita alerte in timp-real despre noile vulnerabilitati software pentru o clasa de aplicatii (e.g., CMS, framework, modul, biblioteca etc.). Suplimentar, aplicatia va oferi pe baza unui API respectand paradigma REST diverse solutii -- precum sfaturi, rapoarte tehnice, ghiduri de programare defensiva, articole si altele -- vizand prevenirea si/sau eradicarea acestor incidente de securitate. Informatiile oferite vor fi disponibile in formate ca HTML, JSON si Atom. Bonus: recurgerea la un model si implementare publish/subscribe.</p>
-  </div>
+    <div class = "description">
+    <p>Folosind datele publice referitoare la incidente de securitate -- preluate, de exemplu, de la Web Application Exploits --, sa se realizeze un sistem capabil sa trimita alerte in timp-real despre noile vulnerabilitati software pentru o clasa de aplicatii (e.g., CMS, framework, modul, biblioteca etc.). Suplimentar, aplicatia va oferi pe baza unui API respectand paradigma REST diverse solutii -- precum sfaturi, rapoarte tehnice, ghiduri de programare defensiva, articole si altele -- vizand prevenirea si/sau eradicarea acestor incidente de securitate. Informatiile oferite vor fi disponibile in formate ca HTML, JSON si Atom. Bonus: recurgerea la un model si implementare publish/subscribe.</p>
+    </div>
+    <div class="div_manage_exploits">
+		<span id="span_filter">
+			<form class = "filter_form">
+				<input type = "text" placeholder="Filter by name">
+				<input type = "text" placeholder="Filter by author">
+				<button type="filter">Apply Filter</button>
+			</form>
+		</span>
+		<span id="span_table">
+			<table>
+				<caption>Exploits</caption>
+				<thead>
+					<tr>
+						<th scope="col">ID</th>
+						<th scope="col">Title</th>
+						<th scope="col">IDWebsite</th>
+						<th scope="col">Platform</th>
+						<th scope="col">Author</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					  <td>1</td>
+					  <td>SQL Injection</td>
+					  <td>31</td>
+					  <td>PHP</td>
+					  <td>John Doe</td>
+					</tr>
+			  </tbody>
+			</table>
+		</span>
+	</div>
 </main>
 <footer>
   <p><a href="information.com">Information</a></p>
