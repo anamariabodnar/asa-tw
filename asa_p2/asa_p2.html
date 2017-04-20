@@ -23,14 +23,15 @@
 
 </header>
 <main>
-    <div class = "description">
-    <p>Folosind datele publice referitoare la incidente de securitate -- preluate, de exemplu, de la Web Application Exploits --, sa se realizeze un sistem capabil sa trimita alerte in timp-real despre noile vulnerabilitati software pentru o clasa de aplicatii (e.g., CMS, framework, modul, biblioteca etc.). Suplimentar, aplicatia va oferi pe baza unui API respectand paradigma REST diverse solutii -- precum sfaturi, rapoarte tehnice, ghiduri de programare defensiva, articole si altele -- vizand prevenirea si/sau eradicarea acestor incidente de securitate. Informatiile oferite vor fi disponibile in formate ca HTML, JSON si Atom. Bonus: recurgerea la un model si implementare publish/subscribe.</p>
-    </div>
     <div class="div_manage_exploits">
 		<span id="span_filter">
-			<form class = "filter_form">
+			<form class = "filter_name">
 				<input type = "text" placeholder="Filter by name">
+			</form>
+			<form class = "filter_author">
 				<input type = "text" placeholder="Filter by author">
+			</form>
+			<form class = "filter_button">
 				<button type="filter">Apply Filter</button>
 			</form>
 		</span>
@@ -44,6 +45,8 @@
 						<th scope="col">IDWebsite</th>
 						<th scope="col">Platform</th>
 						<th scope="col">Author</th>
+						<th scope ="col">Remove from table</th>
+						<th scope ="col">Update</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -53,6 +56,8 @@
 					  <td>31</td>
 					  <td>PHP</td>
 					  <td>John Doe</td>
+					  <td><button type ="deleteButton"> Delete </button> </td>
+					  <td><p><a href="e.html">Edit</a></p></td> 
 					</tr>
 			  </tbody>
 			</table>
