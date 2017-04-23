@@ -32,7 +32,6 @@ ul{
   margin-top:10px;
   margin-bottom:10px;
 }
-
 /******Header******/
 header{
 	background: #35424A;
@@ -86,13 +85,13 @@ header a:hover{
 	font-size: 20px;
 }
 
-/******Newsletter******/
+/******newsletter******/
 #newsletter{
 	padding: 15px;
 	color: #FFFFFF;
 	background: #35424A;;
 }
-#newsletter h1{
+#newsletter h3{
 	float: left;
 }
 #newsletter form{
@@ -158,5 +157,21 @@ footer{
   color:#ffffff;
   background-color:#e8491d;
   text-align: center;
+}
+/******Media Queries******/
+@media(max-width:768px){/*tablet-like*/
+	header #branding,
+	header nav,
+	header nav li,
+	#newsletter h3,
+	#newsletter form,
+	#description-boxes .box{
+		float:none;
+		text-align: center;
+		width:100%;
+	}
+	#showcase h1{
+		margin-top: 40px;
+	}
 }
 

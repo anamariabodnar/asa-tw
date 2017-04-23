@@ -89,3 +89,19 @@ header .highlight, header .current a{
 header a:hover{
 	color: #CCCCCC;
 }
+/******Media Queries******/
+@media(max-width:768px){/*tablet-like*/
+	header #branding,
+	header nav,
+	header nav li,
+	article#main-content{
+		float:none;
+		text-align: center;
+		width:100%;
+	}
+	.dark{
+		float:right;
+		text-align: left;
+		width:75%;
+	}
+}

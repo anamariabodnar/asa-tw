@@ -79,13 +79,17 @@ footer{
 	text-align: center;
 }
 /* Sidebar */
-aside#sidebar{
+#sidebar_comment, #sidebar_filter{
   float:right;
   width:25%;
   margin-top:10px;
 }
 
-aside#sidebar .quote input, aside#sidebar .quote textarea{
+#sidebar_comment .quote input, #sidebar_comment .quote textarea{
+  width:90%;
+  padding:5px;
+}
+#sidebar_filter .quote input, #sidebar_filter.quote textarea{
   width:90%;
   padding:5px;
 }
@@ -112,4 +116,27 @@ footer{
   background-color:#e8491d;
   text-align: center;
 }
-
+/******Media Queries******/
+@media(max-width:768px){/*tablet-like*/
+	header #branding,
+	header nav,
+	header nav li,
+	article#main-col{
+		float:none;
+		text-align: center;
+		width:100%;
+	}
+	#sidebar_filter{
+		float:left;
+		text-align: center;
+		width:100%;
+	}
+	#sidebar_comment{
+		float:left;
+		text-align: center;
+		width:100%;
+	}
+	#sidebar_comment button{
+		margin: 1 1 1 1;
+	}
+}

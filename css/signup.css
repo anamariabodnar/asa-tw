@@ -57,3 +57,18 @@ input[type="text"], input[type="date"]{
 	font-weight: bold;
 	background-color: #E8491D;
 }
+/******Media Queries******/
+@media(max-width:768px){/*tablet-like*/
+	.container{
+		float:none;
+		text-align: center;
+		width:80%;
+	}
+	.container input[type="text"], input[type="date"]{
+		text-align: left;
+		width: 60%;
+	}
+	.container button{
+		width: 60%;
+	}
+}
