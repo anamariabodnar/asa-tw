@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Real-time security alerter web application for exploits">
+		<meta name="keywords" content="real-time, security, exploits, alert, advices, article, solutions for exploits">
+		<meta author="author" content="Paula Carp, Ana Bodnar">
+		<title> ASA | Solutions </title>
+		<link rel="stylesheet" type="text/css" href="./css/solutions.css">
+		<link rel="icon" href="./image/icon.png">
+	</head>
+  <body>
+   <header>
+		<div class="container">
+			<div id="branding">
+				<h1>Application <span class = "highlight"> Security Alerter</span></h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href = "main.html"> HOME </a></li>
+					<li><a href = "about.html"> ABOUT </a></li>
+					<li><a href = "exploits.html"> EXPLOITS </a></li>
+					<li class="current"><a href = "solutions.html"> SOLUTIONS </a></li>
+					<li><a href = "login.html"><image src="./image/login.png" width=70px></image></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">Exploit's Solutions</h1>
+          <ul id="solutions">
+            <li>
+            	<h3>SQL Injection (SQLi)</h3>
+            	<p>Never concatenate user input with application SQL to form the SQL sent to the database. The easy way to do this is to use parameterised statements. Parameterised statements are where the variable parts of the SQL are replaced with markers (usually ?). Instead of concatenating the user input for the email address (see examples above) like this:</p>
+			  	<p><center><b>select email from users where email = 'user_input'</b></center></p>
+				<p> we use: </p>
+				<p><center><b>select email from users where email = ?</b></center></p>
+				<p>The SQL is prepared when the SQL Engine parses it, validates it and notes that there is one parameter for the email address. When you execute it, you pass the parameter separately from the SQL. How you do this depends on the language you are using.</p>
+				<p>Now it does not matter if a user enters any special SQL characters, because they are never parsed by the SQL engine.</p>
+            </li>
+            <li>
+	            <h3>Information Disclosure</h3>
+	            <p>We are providing 4 ways to protect your system: </p>
+				<p><b>1. Model Your Threats</b></p>
+				<p>One of the best things you can do to prevent disclosure is to look at how an attacker might gain access to your system, or how you might allow someone to inadvertantly disclose private information.<p>
+				<p><b>2. Use 3rd Party Authentication</b></p>
+				<p>You are likely not an expert on how to do public/private key encryption, authentication, and authorization.  There are many authentication providers today that are standards based and highly secure.  Don’t build your own system for username/password pairs!<br/><br/>A great side benefit of this is that depending on your application and what provier you use, you may be able to reduce the number of username/password combinations that your customers and employees have to remember.  The more they have to remember, the more likely they are to write one down and have it become compromised in someway.<p>
+				<p><b>3. Prepare for Disclosure</b></p>
+				<p>If information is compromised in some way, how will you react?  How will you communicate the situation to customers?  How will you rally your team around the crisis?  Does your team know your policies for information handling?  Do you have policies?<br/><br/>How you handle a crisis is a key part of your perception to your customers, and bad handling can be worse than the disclosure itself.  This is not something to leave until the crisis starts or to ignore.  Be prepared.<p>
+				<p><b>4.Hack Yourself!</b></p>
+				<p>This one is the most fun and educational.  Get your team to try and get at the data, or hire some experts to do it for you.  Just like the opening scene in the movie Sneakers where reformed robbers break into a bank to expose its weaknesses, you can hire reformed hackers to do the same thing for you.  This will show you where your REAL weaknesses are and will help you improve your overall security.<p>
+            </li>
+          </ul>
+          <div id="pagination">
+			<p><< prev 1 2 3 4 next >></p>
+		   </div>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>Leave a comment</h3>
+            <form class="comment">
+  						<div>
+  							<label>Name</label><br>
+  							<input type="text" placeholder="Name">
+  						</div>
+  						<div>
+  							<label>Email</label><br>
+  							<input type="email" placeholder="Email Address">
+  						</div>
+  						<div>
+  							<label>Comment</label><br>
+  							<textarea placeholder="Comment"></textarea>
+  						</div>
+  						<button class="button_message" type="submit">Post</button>
+					</form>
+          </div>
+        </aside>
+        <aside id="sidebar">
+          <div class="dark">
+          	<div id = "filter_div">
+	            <h3>Filter solution by keywords</h3>
+	  			<input type="text" placeholder="Search">
+	  		</div>
+  			<button class="button_search" type="submit">Search</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <footer>
+		<p>ASA | Application Security Alerter, Copyright &copy; 2017 </p>
+	</footer>
+  </body>
+</html>
