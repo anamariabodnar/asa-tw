@@ -1,0 +1,17 @@
+img {
+	display: block;
+    margin: 20px auto;
+<<<<<<< HEAD
+}
+/******Media Queries******/
+@media(max-width:768px){/*tablet-like*/
+	header #branding,
+	header nav,
+	header nav li{
+		float:none;
+		text-align: center;
+		width:100%;
+	}
+=======
+>>>>>>> aa3e86ff25e571c72ca1a7b8c826bce67319e3a3
+}

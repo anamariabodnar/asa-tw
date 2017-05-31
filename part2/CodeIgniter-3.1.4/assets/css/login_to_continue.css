@@ -1,0 +1,24 @@
+body{
+	font-family: sans-serif;
+	font-size: 0.9em;
+	line-height:1.5em;
+	background-image: url("../image/img1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 720px;
+	background-attachment: fixed;
+}
+
+.container_continue{
+	width: 500px;
+	height: 400px;
+	text-align:center;
+	background-color:rgba(53,66,74, 0.6);
+	border-radius; 4px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.container_continue h1{
+	padding-top: 180px;
+	text-align:center;
+}
