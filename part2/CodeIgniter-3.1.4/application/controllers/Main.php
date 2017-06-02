@@ -11,7 +11,7 @@ class Main extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('asa-tw/main');
+		$this->load->view('pages/main');
 	}
 }
 ?>

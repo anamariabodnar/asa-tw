@@ -64,21 +64,21 @@ abstract class CI_DB_driver {
 	 *
 	 * @var	string
 	 */
-	public $username;
+	public $username = 'asa_user';
 
 	/**
 	 * Password
 	 *
 	 * @var	string
 	 */
-	public $password;
+	public $password = 'asa_user';
 
 	/**
 	 * Hostname
 	 *
 	 * @var	string
 	 */
-	public $hostname;
+	public $hostname = 'localhost/xe';
 
 	/**
 	 * Database name
@@ -92,7 +92,7 @@ abstract class CI_DB_driver {
 	 *
 	 * @var	string
 	 */
-	public $dbdriver		= 'mysqli';
+	public $dbdriver		= 'oci8';
 
 	/**
 	 * Sub-driver

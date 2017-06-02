@@ -1,3 +1,4 @@
+
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -45,7 +46,7 @@ class Users extends CI_Controller {
 		}
 
 
-		$this->load->view('asa-tw/login', $data);
+		$this->load->view('pages/login', $data);
 	}
 
 
@@ -87,7 +88,7 @@ class Users extends CI_Controller {
         }
         $data['user'] = $userData;
 
-        $this->load->view('asa-tw/signup', $data);
+        $this->load->view('pages/signup', $data);
     }
 
     public function logout(){
