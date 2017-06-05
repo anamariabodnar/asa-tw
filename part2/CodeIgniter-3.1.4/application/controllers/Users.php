@@ -44,8 +44,7 @@ class Users extends CI_Controller {
 			}
 
 		}
-
-
+        
 		$this->load->view('pages/login', $data);
 	}
 
