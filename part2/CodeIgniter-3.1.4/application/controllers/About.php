@@ -10,11 +10,11 @@ class About extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('asa-tw/about');
+		$this->load->view('pages/about');
 	}
 	public function login_to_continue()
 	{
-		$this->load->view('asa-tw/login_to_continue');
+		$this->load->view('pages/login_to_continue');
 	}
 }
 ?>
