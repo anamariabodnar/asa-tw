@@ -1,1 +1,2 @@
-# asa-tw
+ASA (Web App Security Alerter)
+Folosind datele publice referitoare la incidente de securitate -- preluate, de exemplu, de la Web Application Exploits --, sa se realizeze un sistem capabil sa trimita alerte in timp-real despre noile vulnerabilitati software pentru o clasa de aplicatii (e.g., CMS, framework, modul, biblioteca etc.). Suplimentar, aplicatia va oferi pe baza unui API respectand paradigma REST diverse solutii -- precum sfaturi, rapoarte tehnice, ghiduri de programare defensiva, articole si altele -- vizand prevenirea si/sau eradicarea acestor incidente de securitate. Informatiile oferite vor fi disponibile in formate ca HTML, JSON si RSS. Bonus: recurgerea la un model si implementare publish/subscribe.
